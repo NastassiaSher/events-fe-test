@@ -1,0 +1,16 @@
+<div class="container" [ngClass]="{'done': eventToDisplay.done, 'accepted': eventToDisplay.accepted, 'changed': eventToDisplay.changed}">
+  <div class="icon-style icon-background">
+    <i class="material-icons icon">
+      {{eventToDisplay.iconName}}
+    </i>
+  </div>
+  <div class="text-box border-bottom">
+    <span class="text margin-left-15">{{eventToDisplay.text}} </span>
+    <span class="bold-italic text-colour">{{eventToDisplay.beForm}} </span>
+    <span class="bold-italic text-colour">{{event.type}} </span>
+    <span class="text">by </span>
+    <span class="italic">{{event.user}} </span>
+    <span class="text">on </span>
+    <span class="date">{{event.date | generalDateSysToViewFormat}}.</span>
+  </div>
+</div>

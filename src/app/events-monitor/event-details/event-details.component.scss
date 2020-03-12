@@ -1,0 +1,80 @@
+@import "../../../sass/variables";
+
+.container {
+  width: 700px;
+  height: 50px;
+  display: flex;
+  color: $text_colour;
+}
+
+span {
+  margin-right: 5px;
+}
+
+.icon {
+  margin: 0 15px 0 15px;
+}
+
+.bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.icon-style {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: $white;
+}
+
+.text-box {
+  width: calc(100% - 50px);
+  height: calc(100% - 1px);
+  background-color: $white;
+  display: flex;
+  align-items: center;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.done {
+  .icon-background {
+    background: $peach;
+  }
+  .border-bottom {
+    border-bottom: 1px solid $peach;
+  }
+  .text-colour {
+    color: $peach;
+  }
+}
+
+.accepted {
+  .icon-background {
+    background: $spring_neon;
+  }
+  .border-bottom {
+    border-bottom: 1px solid $spring_neon;
+  }
+  .text-colour {
+    color: $spring_neon;
+  }
+}
+
+.changed {
+  .icon-background {
+    background: $eggplant_light;
+  }
+  .border-bottom {
+    border-bottom: 1px solid $eggplant_light;
+  }
+  .text-colour {
+    color: $eggplant_light;
+  }
+}
